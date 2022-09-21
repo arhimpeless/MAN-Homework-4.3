@@ -4,7 +4,6 @@
     {
         static void Main(string[] args)
         {
-            int m = 0;
             int n;
             Random rnd = new Random();
             while (true)
@@ -14,7 +13,6 @@
                 n = int.Parse(Console.ReadLine());
                 //Console.WriteLine(n);
                 //Console.ReadKey();
-
                 int[] trainArray = new int[n];
                 for (int x = 0; x < trainArray.Length; x++)
                 {
@@ -22,28 +20,24 @@
                     Console.WriteLine(trainArray[x]);
                 }
                 //Console.ReadKey();
-                int sum = 0;
+                int sumBilet = 0;
                 foreach (int value in trainArray)
                 {
-                    sum = sum + value;
+                    sumBilet = sumBilet + value;
                 }
                 //Console.WriteLine(sum);
                 //Console.ReadKey();
-                Console.WriteLine("Сумма элементов массива: " + sum);
+                Console.WriteLine("Количество всех билетов: " + sumBilet + "\n");
+                //Console.ReadKey();
+                int summCmpl = sumBilet * 8;
+                Console.WriteLine("Общий метраж ткани: " + summCmpl);
+                double rulon = 0;
+                //summCmpl = Convert.ToDecimal(summCmpl);
+                //rulon = Math.Ceiling(summCmpl/ 100);
+                rulon = summCmpl / 100.0;
+                Console.WriteLine("Количество рулонов: " + rulon);
+                Console.WriteLine();
                 Console.ReadKey();
-                int summCmpl = sum * 8;
-                int count = 0;
-                for (int c = 0; 0 < summCmpl; c++)
-                {
-                    int x = 0;
-                    summCmpl - 100;
-                    c = count;
-                }
-                Console.WriteLine(count);
-                //decimal rulon = 0;
-                //cmp1 = Convert.ToDecimal(cmp1);
-                //rulon = Math.Ceiling(cmp1 / 100);
-                //Console.WriteLine("Количество рулонов: " + rulon);
             }
         }
     }
