@@ -12,30 +12,38 @@
                 Console.WriteLine("Существует поезд с количеством вагонов N. ");
                 Console.Write("Введите N: ");
                 n = int.Parse(Console.ReadLine());
+                //Console.WriteLine(n);
+                //Console.ReadKey();
+
                 int[] trainArray = new int[n];
                 for (int x = 0; x < trainArray.Length; x++)
                 {
-                    trainArray[m] = rnd.Next(0, 37);
-                    Console.WriteLine(trainArray[m]);
+                    trainArray[x] = rnd.Next(0, 37);
+                    Console.WriteLine(trainArray[x]);
                 }
+                //Console.ReadKey();
                 int sum = 0;
                 foreach (int value in trainArray)
                 {
                     sum = sum + value;
                 }
-                Console.WriteLine("Сумма элементов массива: " + sum); // GJXTVEEEEEEEEEEE!!!!!!!!!!!!!!!!!!!!!!
-                int cmp1 =0;
-                for (int c = 0; c < sum; c++)
+                //Console.WriteLine(sum);
+                //Console.ReadKey();
+                Console.WriteLine("Сумма элементов массива: " + sum);
+                Console.ReadKey();
+                int summCmpl = sum * 8;
+                int count = 0;
+                for (int c = 0; 0 < summCmpl; c++)
                 {
-                    int complect =0;
-                    complect = sum - 8;
-                    Console.WriteLine(c);
-                    c = cmp1;
+                    int x = 0;
+                    summCmpl - 100;
+                    c = count;
                 }
-                decimal rulon = 0;
-                cmp1 = Convert.ToDecimal(cmp1);
-                rulon = Math.Ceiling(cmp1 / 100);
-                Console.WriteLine("Количество рулонов: " + rulon);
+                Console.WriteLine(count);
+                //decimal rulon = 0;
+                //cmp1 = Convert.ToDecimal(cmp1);
+                //rulon = Math.Ceiling(cmp1 / 100);
+                //Console.WriteLine("Количество рулонов: " + rulon);
             }
         }
     }
